@@ -14,6 +14,9 @@ function App() {
   return <div className="App">
      Hello React
      <ReactComponente />
+     <div className='conteudo'>
+
+     
      <div className='Conexões'>
 
      <h1>Conexões</h1>
@@ -36,6 +39,15 @@ function App() {
      {/* <TransmissorSockets /> */}
      </>}
 
+     </div>
+     </div>
+     </div>
+
+     <div className='persistencia'>
+     <h1>Dados persistidos</h1>
+     <div className='dados'>
+      <h2>Mensagens no servidor:  </h2>
+      <h2>Mensagens no banco de dados: </h2>
      </div>
      </div>
      </div>
