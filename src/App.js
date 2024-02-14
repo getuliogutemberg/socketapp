@@ -1,29 +1,44 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ReactComponente from './ReactComponente'; 
 import './App.css';
-import axios from 'axios';
+import Receptor from './Receptor';
+import Transmissor from './Transmissor';
+import ReceptorSockets from './ReceptorSockets';
+import TransmissorSockets from './TransmissorSockets';
 
 
 function App() {
-  const [responseAPI , setResponseAPI] = useState('Servidor não conectado');
-
-  useEffect(() => {    
-    axios.get('http://localhost:5000')
-    .then((response) => {
-      setResponseAPI('Conectado ao servidor com sucesso');
-      setTimeout(() => setResponseAPI(response.data), 2000);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-    
-  },[])
+  const [showHttp, setShowHttp] = useState( true );
+  const [showSockets, setShowSockets] = useState( true );
   
   return <div className="App">
      Hello React
      <ReactComponente />
-     {responseAPI}
-     
+     <div className='Conexões'>
+
+     <h1>Conexões</h1>
+     <div className='metodos'>
+
+     <div className='HTTP'>
+     <h2 onClick={() => setShowHttp(!showHttp)}>Conexão HTTP: </h2>
+     {showHttp && <>
+     <Receptor/>
+     <Transmissor />
+     </>}
+
+     </div>
+
+     <div className='SOCKETS'>
+     <h2 onClick={() => setShowSockets(!showSockets)}>Conexão Sockets: </h2>
+     {showSockets && <>
+     <ReceptorSockets/>
+     <Transmissor />
+     {/* <TransmissorSockets /> */}
+     </>}
+
+     </div>
+     </div>
+     </div>
    </div>
  
 }

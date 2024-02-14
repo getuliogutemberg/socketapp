@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.HTTP{
+  background-color: gray;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.SOCKETS{
+  background-color: rgb(188, 176, 176);
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.Conexões{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+  background-color: rgb(181, 186, 186);
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+
+}
+
+.metodos{
+  display: flex;
+  gap: 10px;
+}
