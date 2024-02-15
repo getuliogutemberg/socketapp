@@ -4,7 +4,11 @@ import './App.css';
 import Receptor from './Receptor';
 import Transmissor from './Transmissor';
 import ReceptorSockets from './ReceptorSockets';
-import TransmissorSockets from './TransmissorSockets';
+import MessagensOnServer from './MessagensOnServer';
+import MessagensOnDB from './MessagensOnDB';
+import ADMINDB from './ADMINDB';
+
+// import TransmissorSockets from './TransmissorSockets';
 
 
 function App() {
@@ -12,7 +16,7 @@ function App() {
   const [showSockets, setShowSockets] = useState( true );
   
   return <div className="App">
-     Hello React
+     <h1 className='title'>Aplicação de exemplo</h1>
      <ReactComponente />
      <div className='conteudo'>
 
@@ -24,20 +28,20 @@ function App() {
 
      <div className='HTTP'>
      <h2 onClick={() => setShowHttp(!showHttp)}>Conexão HTTP: </h2>
-     {showHttp && <>
+     {showHttp && <div className='conexao'>
      <Receptor/>
      <Transmissor />
-     </>}
+     </div>}
 
      </div>
 
      <div className='SOCKETS'>
      <h2 onClick={() => setShowSockets(!showSockets)}>Conexão Sockets: </h2>
-     {showSockets && <>
+     {showSockets && <div className='conexao'>
      <ReceptorSockets/>
      <Transmissor />
      {/* <TransmissorSockets /> */}
-     </>}
+     </div>}
 
      </div>
      </div>
@@ -46,8 +50,15 @@ function App() {
      <div className='persistencia'>
      <h1>Dados persistidos</h1>
      <div className='dados'>
-      <h2>Mensagens no servidor:  </h2>
-      <h2>Mensagens no banco de dados: </h2>
+      <MessagensOnServer />
+      <MessagensOnDB />
+     </div>
+     </div>
+     <div className='persistencia'>
+     <h1>Gestão de dados</h1>
+     <div className='dados'>
+      
+      <ADMINDB />
      </div>
      </div>
      </div>

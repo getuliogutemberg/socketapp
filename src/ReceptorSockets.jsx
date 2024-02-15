@@ -4,9 +4,10 @@ import socketIOClient from 'socket.io-client'; // npm install socket.io-client
 import './ReceptorSockets.css';
 
 
+
 const ReceptorSockets = () => {
   const [responseConnectAPISocket , setResponseConnectAPISocket] = useState('Servidor Socket não conectado');
-  const [responseAPISocket , setResponseAPISocket] = useState('Receptor não conectado ao servidor de sockets');
+  const [responseAPISocket , setResponseAPISocket] = useState({message:'Receptor não conectado ao servidor de sockets'});
   const [progress, setProgress] = useState(0);
   
   
@@ -27,8 +28,9 @@ const ReceptorSockets = () => {
     socket.on('newMessage', (messages) => {
         // messages contém todas as mensagens, você precisa processá-las conforme necessário
         // Aqui, assumindo que messages é uma matriz de objetos com propriedade 'message'
-        const lastMessage = messages[messages.length - 1];
-        setResponseAPISocket(lastMessage ? 'Ultima mensagem: ' + lastMessage.message : 'Nenhuma mensagem');
+        console.log(messages);
+        const lastMessage = messages === 'Nenhuma mensagem' || messages.length === 0 ? {message: 'Nenhuma mensagem'} : messages[messages.length - 1];
+        setResponseAPISocket({message:lastMessage.message});
         setProgress(100);
         
     });
@@ -42,7 +44,7 @@ return (
   <div className='ReceptorSockets'>
       <h1>Receptor</h1>
       <p>{responseConnectAPISocket}</p>
-      <p>{responseAPISocket}</p>
+      <p>{responseAPISocket && responseAPISocket.message}</p>
       
       <div style={{ width: '100%', backgroundColor: '#f0f0f0' }}>
           <div

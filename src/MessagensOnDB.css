@@ -1,0 +1,46 @@
+.MessagensOnDB{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   justify-content: start;
+   
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+.title{
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle{
+    color: gray;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+.message{
+    margin: 0;
+    padding: 0;
+}
+.text{
+    font-size: larger;
+    font-weight: bold;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    height: 27vh;
+    /* width: 100%; */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    /* text-decoration: none; */
+    list-style: none;
+}

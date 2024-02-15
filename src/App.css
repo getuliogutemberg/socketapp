@@ -59,7 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: start;
+  
   justify-content: center;
   background-color: rgb(181, 186, 186);
   width: fit-content;
@@ -73,13 +73,32 @@
 .metodos{
   display: flex;
   gap: 10px;
+  flex-grow: 1;
+  justify-content: space-between;
+  background-color: rgb(222, 163, 163);
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.conexao{
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  justify-content: space-between;
+  height: 60vh;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .persistencia{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: start;
+  
   justify-content: center;
   background-color: rgb(181, 186, 186);
   width: fit-content;
@@ -91,12 +110,15 @@
 
 .conteudo{
   display: flex;
+  flex-wrap: wrap ;
+  
   flex-direction: row;
   gap: 10px;
-  align-items: start;
-  justify-content: center;
+  
+  justify-content: space-between;
   background-color: rgb(151, 228, 228);
-  width: fit-content;
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid black;
   border-radius: 8px;
   padding: 8px;
@@ -107,12 +129,23 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: start;
+  
   justify-content: center;
   background-color: rgb(216, 164, 164);
-  width: fit-content;
+  height: fit-content;
   border: 1px solid black;
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+}
+
+.ReactComponente{
+  
+  
+  
+  background-color: rgb(173, 216, 164);
+  
+  border: 1px solid black;
+  border-radius: 8px;
+  
 }

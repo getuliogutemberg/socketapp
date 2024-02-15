@@ -2,7 +2,7 @@ import React from 'react';
 function ReactComponente() {
  return (
    <div className='ReactComponente'>
-     ReactComponente
+     <h1>Componente React</h1>
    </div>
  );
 }
