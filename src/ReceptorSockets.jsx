@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 // import axios from 'axios'; // npm install axios
 import socketIOClient from 'socket.io-client'; // npm install socket.io-client
 import './ReceptorSockets.css';
-
+import { PiPlugsBold } from "react-icons/pi";
 
 
 const ReceptorSockets = () => {
@@ -42,7 +42,7 @@ const ReceptorSockets = () => {
 
 return (
   <div className='ReceptorSockets'>
-      <h1>Receptor</h1>
+      <h2><PiPlugsBold  size={30}/> Receptor Sockets</h2>
       <p>{responseConnectAPISocket}</p>
       <p>{responseAPISocket && responseAPISocket.message}</p>
       

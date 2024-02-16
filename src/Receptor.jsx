@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'; // npm install axios
 import './Receptor.css';
-
+import { MdOutlineCellTower } from "react-icons/md";
 const Receptor = () => {
   const [responseConnectAPI , setResponseConnectAPI] = useState('Servidor não conectado'); // useState para armazenar a resposta da API
   const [responseAPI , setResponseAPI] = useState('Receptor não conectado'); // useState para armazenar a resposta da API
@@ -60,11 +60,12 @@ const Receptor = () => {
 
   return (
     <div className='Receptor'>
-        <h1>Receptor</h1>
+        <h2><MdOutlineCellTower  size={30}/> Receptor Http</h2>
         <p>{responseConnectAPI}</p>
         <p>{responseAPI}</p>
         
         <div style={{ width: '100%', backgroundColor: '#f0f0f0' }}>
+        
             <div
               style={{
                 width: `${progress}%`,

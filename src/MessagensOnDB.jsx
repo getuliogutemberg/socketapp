@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import socketIOClient from 'socket.io-client'; // npm install socket.io-client
 import './MessagensOnDB.css';
-
+import { TfiSave } from "react-icons/tfi";
 const MessagensOnDB = () => {
     const [responseConnectAPISocket , setResponseConnectAPISocket] = useState('Servidor Socket não conectado');
     const [messagesOnDB, setMessagesOnDB] = useState([{
@@ -56,7 +56,7 @@ const MessagensOnDB = () => {
   }, [])
   return (
     <div className='MessagensOnDB'>
-        <h1 className='title'>Mensagens no banco de dados:  </h1>
+        <h1 className='title'><TfiSave  size={30}/> Mensagens no banco de dados:  </h1>
         <h3 className='subtitle'>{responseConnectAPISocket}</h3>
        
         <ul className='list'>

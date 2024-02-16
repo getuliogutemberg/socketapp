@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'; // npm install axios
 import './Transmissor.css';
-
+import { RiUserVoiceLine } from "react-icons/ri";
 const Transmissor = () => {
     const [responseAPI , setResponseAPI] = useState('Transmissor não conectado'); // useState para armazenar a resposta da API
     const [message , setMessage] = useState(''); // useState para armazenar a mensagen para ser enviada para a API
@@ -31,7 +31,7 @@ const Transmissor = () => {
     
   return (
     <div className='Transmissor'> 
-        <h1>Transmissor</h1>
+        <h2><RiUserVoiceLine  size={30}/> Transmissor</h2>
         <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
         <button onClick={() => setMessage('')}>Limpar</button>
         <button onClick={() => sendMessage()}>Enviar</button>

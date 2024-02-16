@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import socketIOClient from 'socket.io-client'; // npm install socket.io-client
 import './ADMINDB.css';
-
+import { RiAdminLine } from "react-icons/ri";
 const ADMINDB = () => {
   const socket = socketIOClient('http://localhost:5006')
     const [responseConnectAPISocket , setResponseConnectAPISocket] = useState('Servidor Socket não conectado');
@@ -42,7 +42,7 @@ const ADMINDB = () => {
   }, []);
   return (
   <div className='MessagensOnDB ADMINDB'>
-        <h1 className='title'>Gestão de mensagens do no DB:  </h1>
+        <h2 className='title'><RiAdminLine  size={30}/>Gestão de mensagens do no DB:  </h2>
         <h3 className='subtitle'>{responseConnectAPISocket}</h3>
        
         <ul className='elements' >

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-   justify-content: start;
-   
+   width: 90%;
+
     border: 1px solid black;
     border-radius: 8px;
     padding: 8px;
@@ -28,4 +28,5 @@
     text-align: end;
     margin: 0;
     padding: 0;
+
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import socketIOClient from 'socket.io-client'; // npm install socket.io-client
 import './MessagensOnServer.css';
-
+import { TbMessages } from "react-icons/tb";
 const MessagensOnServer = () => {
     const [responseConnectAPISocket , setResponseConnectAPISocket] = useState('Servidor Socket não conectado');
     const [messagesOnServer, setMessagesOnServer] = useState([{
@@ -39,7 +39,7 @@ const MessagensOnServer = () => {
   }, []);
   return (
     <div className='MessagensOnServer'>
-        <h1 className='title'>Mensagens no servidor:  </h1>
+        <h1 className='title'><TbMessages size={30} /> Mensagens no servidor:  </h1>
         <h3 className='subtitle'>{responseConnectAPISocket}</h3>
        
         <ul className='list' >
