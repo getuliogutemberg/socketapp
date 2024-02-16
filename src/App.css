@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: aliceblue;
 }
 
 .connect{
@@ -12,12 +13,10 @@
   border-radius: 8px;
   padding: 8px;
   cursor: pointer
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,6 +33,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.appName{
+  font-style: italic;
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  margin: 50px;
+  padding: 20px;
+  background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+transition: all 1s ease ;
+
+/* border: 1px solid rgba(96, 83, 83, 0.56); */
+}
+.hide{
+ 
+  transition: all 1s ease ;
+  display: none;
 }
 
 .App-link {
@@ -56,6 +80,13 @@
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+  /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
 }
 
 .SOCKETS{
@@ -65,6 +96,13 @@
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+  /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
 }
 
 .Conexões{
@@ -79,6 +117,13 @@
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+  /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
 
 }
 
@@ -93,6 +138,13 @@
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+  /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
 }
 .conexao{
   display: flex;
@@ -100,10 +152,11 @@
   gap: 10px; 
   justify-content: space-between;
   height: 60vh;
-  border: 1px solid black;
+  
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+  
 }
 
 .persistencia{
@@ -118,23 +171,51 @@
   border-radius: 8px;
   padding: 8px;
   cursor: pointer;
+  /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
 }
+
+.logo{
+  width: 50px;
+  height: 50px;
+  
+}
+
 
 .conteudo{
   display: flex;
   flex-wrap: wrap ;
-  
+  height: 100vh;
   flex-direction: row;
   gap: 10px;
   
   justify-content: space-between;
   background-color: rgb(151, 228, 228);
-  width: 100%;
+  
   box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 8px;
+  /* border: 1px solid black; */
+  /* border-radius: 8px; */
   padding: 8px;
   cursor: pointer;
+  /* From https://css.glass */
+/* background: url('./D4Ll.gif'); */
+background: url('./dark-background-abstract-background-network-3d-background-6016x3384-8324.png');
+
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+  /* From https://css.glass */
+/* background: rgba(96, 83, 83, 0.39); */
+/* border-radius: 16px; */
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+/* backdrop-filter: blur(11px); */
+/* -webkit-backdrop-filter: blur(11px); */
+
 }
 
 .dados{
@@ -148,7 +229,13 @@
   border: 1px solid black;
   border-radius: 8px;
   padding: 8px;
- 
+ /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
   
   cursor: pointer;
 }
@@ -161,5 +248,12 @@
   
   border: 1px solid black;
   border-radius: 8px;
+  /* From https://css.glass */
+background: rgba(96, 83, 83, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11px);
+-webkit-backdrop-filter: blur(11px);
+border: 1px solid rgba(96, 83, 83, 0.56);
   
 }
