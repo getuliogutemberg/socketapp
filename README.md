@@ -1,6 +1,6 @@
 # SocketApp: Conceitos de Conectividade
 
-SocketApp é uma aplicação voltada para reforço de memória e revisão de conceitos de conectividade entre camadas de uma aplicação, com ênfase nas vantagens em relação ao protocolo HTTP. Oferece uma experiência de aprendizado dinâmica e interativa, com velocidade de feedback e categorização eficiente.
+SocketApp é uma aplicação voltada para reforço de memória e revisão de conceitos de conectividade entre camadas de uma aplicação, com ênfase nas vantagens em relação ao protocolo HTTP. Oferece uma experiência de aprendizado dinâmica e interativa, com velocidade de feedback e categorização eficiente.[To montando uma apresentação aqui](https://docs.google.com/presentation/d/e/2PACX-1vTuac2iflk5Qonmn9wfxgm7TSCjp1u1ry-bHRUVHOvgWP4H4Y6hKX1T8AM9J3xP5IZ5U4aBjAfCvEf_/pub?start=true&loop=false&delayms=10000#slide=id.g1f100cf0cb0_0_373)
 
 ## Funcionalidades
 
