@@ -11,7 +11,7 @@ const MessagensOnDB = () => {
     
     
     useEffect(() => {
-      const socket = socketIOClient('http://localhost:5006') // URL do servidor
+      const socket = socketIOClient('http://localhost:5051') // URL do servidor
       
       
       socket.on('connect', () => {
@@ -39,7 +39,7 @@ const MessagensOnDB = () => {
   }, []);
 
   useEffect(() => {
-    const socket = socketIOClient('http://localhost:5006') // URL do servidor
+    const socket = socketIOClient('http://localhost:5051') // URL do servidor
     
 
     socket.on('NewMessage', () => {

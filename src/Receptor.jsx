@@ -10,7 +10,7 @@ const Receptor = () => {
 
     useEffect(() => {  
         const conectReceptor = () => {
-          axios.get('http://localhost:5005') // URL da API
+          axios.get('http://localhost:5050') // URL da API
           .then((response) => { // Caso tenha sucesso
             setResponseConnectAPI('Conectado ao servidor com sucesso'); // Atualiza a resposta da API
             setTimeout(() => {
@@ -30,7 +30,7 @@ const Receptor = () => {
 
       useEffect(() => {
         const getLastMessage = () => {
-          axios.get('http://localhost:5005/last') // URL da API endpoint para pegar a ultima mensagem
+          axios.get('http://localhost:5050/last') // URL da API endpoint para pegar a ultima mensagem
           .then((response) => { // Caso tenha sucesso
             setResponseAPI(response.data); // Atualiza a resposta da API
             setProgress(100); // Quando a solicitação é bem-sucedida, define o progresso como 100%

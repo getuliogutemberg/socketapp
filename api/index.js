@@ -1,6 +1,6 @@
 const express = require('express');
-const HTTPPORT = process.env.HTTPPORT || 5005; // Porta onde o servidor HTTP irá escutar
-const SOCKETPORT = process.env.SOCKETPORT || 5006; // Porta onde o servidor WebSocket irá escutar
+const HTTPPORT = process.env.HTTPPORT || 5050; // Porta onde o servidor HTTP irá escutar
+const SOCKETPORT = process.env.SOCKETPORT || 5051; // Porta onde o servidor WebSocket irá escutar
 const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');

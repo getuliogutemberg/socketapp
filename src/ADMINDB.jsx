@@ -3,7 +3,7 @@ import socketIOClient from 'socket.io-client'; // npm install socket.io-client
 import './ADMINDB.css';
 import { RiAdminLine } from "react-icons/ri";
 const ADMINDB = () => {
-  const socket = socketIOClient('http://localhost:5006')
+  const socket = socketIOClient('http://localhost:5051')
     const [responseConnectAPISocket , setResponseConnectAPISocket] = useState('Servidor Socket não conectado');
     const [messagesOnDB, setMessagesOnDB] = useState([{
         message: 'Nenhuma mensagem'
@@ -12,7 +12,7 @@ const ADMINDB = () => {
     
     
     useEffect(() => {
-        const socket = socketIOClient('http://localhost:5006') // URL do servidor
+        const socket = socketIOClient('http://localhost:5051') // URL do servidor
       
       
       socket.on('connect', () => {

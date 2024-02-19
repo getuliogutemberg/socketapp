@@ -1,3 +1,11 @@
+## Screenshots
+
+![Do zero ao socket](screenshots/screenshot1.png)
+![camanda do frontend](screenshots/screenshot2.png)
+![camada de backend](screenshots/screenshot3.png)
+![camada de dados](screenshots/screenshot4.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

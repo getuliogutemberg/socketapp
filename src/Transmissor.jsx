@@ -7,7 +7,7 @@ const Transmissor = () => {
     const [message , setMessage] = useState(''); // useState para armazenar a mensagen para ser enviada para a API
     
     useEffect(() => {  
-        axios.get('http://localhost:5005') // URL da API
+        axios.get('http://localhost:5050') // URL da API
         .then((response) => { // Caso tenha sucesso
           setResponseAPI('Conectado transmissor'); // Atualiza a resposta da API
           setTimeout(() => setResponseAPI('Transmissor, ' + response.data), 2000); // Atualiza a resposta da API depois de 2 segundos
@@ -19,7 +19,7 @@ const Transmissor = () => {
       },[])// useEffect para executar a chamada da API apenas uma vez
 
     const sendMessage = () => {
-        axios.post('http://localhost:5005' , { message: message } ) // URL da API
+        axios.post('http://localhost:5050' , { message: message } ) // URL da API
         .then((response) => { // Caso tenha sucesso
           setResponseAPI(response.data.message); // Atualiza a resposta da API
 
